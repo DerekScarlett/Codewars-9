@@ -3,6 +3,21 @@ Question: Find the number with the most digits.
 If two numbers in the argument array have the same number of digits, return the first one in the array.
 
 Solution:
+
+function findLongest(array){
+  var biggestNum = 0;
+
+  for(var i = 0; i < array.length; i++) {
+  
+    if(array[i].toString().length > biggestNum.toString().length) {
+      biggestNum = array[i];
+    }
+    
+  }
+  
+  return biggestNum;
+}
+
 //wrote a function that takes in an array
 function findLongest(array){
 //made a variable to store the number that had the most digits
